@@ -63,8 +63,8 @@ contract QKCToken is ERC20Interface, SafeMath {
         name = "Boom Coin";
         decimals = 2;
         _totalSupply = 100000;
-        balances[0x98af0d3488c5ffe99346b3e7149ba113eb104532] = _totalSupply;
-        emit Transfer(address(0), 0x98af0d3488c5ffe99346b3e7149ba113eb104532, _totalSupply);
+        balances[YOUR_XDCPay_WALLET_ADDRESS] = _totalSupply;
+        emit Transfer(address(0), YOUR_XDCPay_WALLET_ADDRESS, _totalSupply);
     }
  
     function totalSupply() public constant returns (uint) {
